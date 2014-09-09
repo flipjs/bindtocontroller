@@ -45,17 +45,17 @@
       </nav>
     </header>
 
-    <div class="container jumbotron">
+    <div class="container jumbotron text-center">
 
       <div ng-controller="ParentController as ParentCtrl">
 
-        <h1 class="text-center"><i class="fa fa-male"></i><i class="fa fa-female"></i> The <span class="red">{{ ::ParentCtrl.fizzbuzz }}</span> parent.</h1>
+        <h1><i class="fa fa-male"></i><i class="fa fa-female"></i> The <span class="red">{{ ::ParentCtrl.fizzbuzz }}</span> parent.</h1>
 
         <music-player track="ParentCtrl.song" artist="{{ ::ParentCtrl.artist }}"></music-player>
 
         <div ng-controller="ChildController as ChildCtrl">
 
-          <h1 class="text-center">The <span class="red">{{ ::ChildCtrl.fizzbuzz }}</span> child. <i class="fa fa-child"></i></h1>
+          <h1>The <span class="red">{{ ::ChildCtrl.fizzbuzz }}</span> child. <i class="fa fa-child"></i></h1>
 
           <music-player track="ChildCtrl.song" artist="{{ ::ChildCtrl.artist }}"></music-player>
 
@@ -64,7 +64,6 @@
       </div> <!-- ParentController -->
 
     </div>
-        <!-- FOOTER -->
     <footer>
       <div class="text-center"><h6>© 2014 Felipe Apostol</h6></div>
     </footer>

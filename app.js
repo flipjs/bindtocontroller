@@ -34,10 +34,10 @@ void (function(app) {
       controllerAs: 'MusicPlayerCtrl',
       bindToController: true,
       template: [
-          '<div class="text-center"><button class="btn btn-xlarge btn-primary">'
+          '<button class="btn btn-xlarge btn-primary">'
         , '<i class="fa fa-music black"></i> {{ MusicPlayerCtrl.song }}&nbsp; '
         , '<i class="fa fa-play black"></i> {{ MusicPlayerCtrl.artist }} '
-        , '<i class="fa fa-group black"></i></button></div>'
+        , '<i class="fa fa-group black"></i></button>'
       ].join(''),
       link: function(scope, element, attrs, ctrl) {
         element.bind('click', function() {
